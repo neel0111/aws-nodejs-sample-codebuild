@@ -8,7 +8,7 @@ phases:
     commands:
       - echo Installing Mocha...
       - npm install -g mocha
-      - npm install sonarqube-scanner --save-dev
+      - npm install sonarqube-scanner
   pre_build:
     commands:
       - echo Installing source NPM dependencies...
