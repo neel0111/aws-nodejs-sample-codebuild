@@ -5,6 +5,5 @@
   "dependencies": {"async": "2.5.x"},
   "scripts": {
     "start": "node app.js"
-    "sonar": "node sonar-project.js"
   }
 }
