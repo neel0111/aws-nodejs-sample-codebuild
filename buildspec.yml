@@ -20,10 +20,11 @@ phases:
       - echo Compiling the Node.js code
       - mocha test.js
       - npm install sonarqube-scanner
-      - npm run sonar
+     
   post_build:
     commands:
       - echo Build completed on `date`
+      - npm run sonar
 # Include only the files required for your application to run.
 # Do not use recursively include artifacts from node_modules directory as it will include unnecessary packages 
 # used only for building and testing.
