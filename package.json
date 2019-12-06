@@ -6,7 +6,4 @@
   "scripts": {
     "start": "node app.js"
   }
-  "scripts": {
-       "start": "node sonar-project.js"
-    }
 }
