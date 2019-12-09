@@ -24,7 +24,6 @@ phases:
   post_build:
     commands:
       - echo Build completed on `date`
-      - sonar: "node sonar-project.js"
       - sonar-scanner -Dsonar.host.url=http://ec2-3-94-168-153.compute-1.amazonaws.com -Dsonar.login=4b10472faeabd02e136783eba7a052c02e0ff79a -Dsonar.login=admin -Dsonar.password=admin
 # Include only the files required for your application to run.
 # Do not use recursively include artifacts from node_modules directory as it will include unnecessary packages 
