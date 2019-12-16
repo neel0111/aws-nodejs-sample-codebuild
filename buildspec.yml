@@ -20,8 +20,7 @@ phases:
       - echo Compiling the Node.js code
       - mocha test.js
       - npm install -g sonarqube-scanner
-      - sonar-scanner -Dsonar.host.url=http://ec2-3-230-26-162.compute-1.amazonaws.com -Dsonar.login=4b10472faeabd02e136783eba7a052c02e0ff79a -Dsonar.login=admin -Dsonar.password=admin
-     
+      - sonar-scanner -Dsonar.host.url= http://3.230.66.65/ -Dsonar.login=be1c0e01a2a9dd7107a82f805fb8ddc7fe38ff8e -Dsonar.login=sonarqube -Dsonar.password=Idxsq@123
   post_build:
     commands:
       - echo Build completed on `date`
