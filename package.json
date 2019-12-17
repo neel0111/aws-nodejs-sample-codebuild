@@ -6,4 +6,7 @@
   "scripts": {
     "start": "node app.js"
   }
+  "scripts": {
+    "sonarqube": "sonarqube-scanner-node -Dsonar.login=be1c0e01a2a9dd7107a82f805fb8ddc7fe38ff8e"
+  }
 }
