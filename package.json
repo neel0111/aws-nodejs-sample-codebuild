@@ -4,9 +4,7 @@
   "private": true,
   "dependencies": {"async": "2.5.x"},
   "scripts": {
-    "sonarqube": "sonarqube-scanner-node -Dsonar.login=be1c0e01a2a9dd7107a82f805fb8ddc7fe38ff8e"
-    
-    "start": "node app.js"
-    
+    "sonarqube": "sonarqube-scanner-node -Dsonar.login=be1c0e01a2a9dd7107a82f805fb8ddc7fe38ff8e" 
+    "start": "node app.js"  
   }
   }
