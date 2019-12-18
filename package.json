@@ -1,10 +1,9 @@
 {
-  "name": "Elastic-Beanstalk-Sample-App",
+  "name": "Sample-NodeJS",
   "version": "0.0.1",
   "private": true,
   "dependencies": {"async": "2.5.x"},
   "scripts": {
-    "sonarqube": "sonarqube-scanner-node -Dsonar.login=be1c0e01a2a9dd7107a82f805fb8ddc7fe38ff8e" 
-    "start": "node app.js"  
+        "start": "node app.js"  
   }
   }
