@@ -29,6 +29,8 @@ phases:
       - sonar-scanner -Dsonar.host.url=http://3.230.66.65 -Dsonar.login=be1c0e01a2a9dd7107a82f805fb8ddc7fe38ff8e -Dsonar.login=sonarqube -Dsonar.password=Idxsq@123
   post_build:
     commands:
+      - sam deploy --template-file outputtemplate.yaml --stack-name lossam --region us-east-1 --capabilities CAPABILITY_IAM --parameter-overrides StageName=Staging
+      - echo "Deployment Completed"
       - echo Build completed on `date`
 # Include only the files required for your application to run.
 # Do not use recursively include artifacts from node_modules directory as it will include unnecessary packages 
@@ -38,7 +40,4 @@ artifacts:
   type: zip
   files:
    - artifacts/**/*
-    - $samTemplate
-    - $packageTemplate
-    - deploy.sh
   discard-paths: yes
