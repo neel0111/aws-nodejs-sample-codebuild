@@ -22,7 +22,6 @@ phases:
       - pip install --upgrade pip
       - pip install pipenv --user
       - pip install awscli aws-sam-cli
-      - sam package --template-file $samTemplateName --s3-bucket $s3ArtifactBucketName --output-template-file $packagedTemplateName
       - npm install -g sonarqube-scanner
       - sonar-scanner -Dsonar.host.url=http://3.230.66.65 -Dsonar.login=be1c0e01a2a9dd7107a82f805fb8ddc7fe38ff8e -Dsonar.login=sonarqube -Dsonar.password=Idxsq@123	      - sonar-scanner -Dsonar.host.url=http://3.230.66.65 -Dsonar.login=be1c0e01a2a9dd7107a82f805fb8ddc7fe38ff8e -Dsonar.login=sonarqube -Dsonar.password=Idxsq@123
   post_build:
