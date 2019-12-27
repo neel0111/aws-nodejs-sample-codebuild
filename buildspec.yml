@@ -23,8 +23,7 @@ phases:
       - pip install pipenv --user
       - pip install awscli aws-sam-cli
       - npm install -g sonarqube-scanner
-      - sonar-scanner -Dsonar.host.url=http://3.230.66.65 -Dsonar.login=be1c0e01a2a9dd7107a82f805fb8ddc7fe38ff8e -Dsonar.login=sonarqube -Dsonar.password=Idxsq@123	      - sonar-scanner -Dsonar.host.url=http://3.230.66.65 -Dsonar.login=be1c0e01a2a9dd7107a82f805fb8ddc7fe38ff8e -Dsonar.login=sonarqube -Dsonar.password=Idxsq@123
-  post_build:
+      - sonar-scanner -Dsonar.host.url=http://3.230.66.65 -Dsonar.login=be1c0e01a2a9dd7107a82f805fb8ddc7fe38ff8e -Dsonar.login=sonarqube -Dsonar.password=Idxsq@123
     commands:
       #- sam deploy --template-file outputtemplate.yaml --stack-name lossam --region us-east-1 --capabilities CAPABILITY_IAM --parameter-overrides StageName=Staging
       #- echo "Deployment Completed"
