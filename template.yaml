@@ -13,15 +13,6 @@ Resources:
       CodeUri: ./ 
       Handler: app.handler
       Runtime: nodejs10.x
-    "Version": "2012-10-17"
-    "Statement": [
-        "Effect": "Allow"
-        "Action": [
-            "iam:GetRole"
-            "iam:PassRole"
-        ]
-        ]
-        "Resource": "*"
       Events:
         Api:
           Type: Api
