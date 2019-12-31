@@ -10,7 +10,7 @@ Resources:
     Type: AWS::Serverless::Function
     Properties:
       CodeUri: ./ 
-      Handler: sample.handler
+      Handler: index.handler
       Runtime: nodejs10.x
       Policies: 
        - CloudFormationDescribeStacksPolicy: {}
@@ -18,5 +18,5 @@ Resources:
         Api:
           Type: Api
           Properties:
-            Path: /test
+            Path: /samlambda
             Method: get      
