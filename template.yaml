@@ -19,7 +19,7 @@ Resources:
           Properties:
             Path: /test
             Method: get      
-     CodePipelineRole:
+    CodePipelineRole:
     Type: 'AWS::IAM::Role'
     Properties:
       AssumeRolePolicyDocument:
