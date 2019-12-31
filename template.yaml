@@ -12,6 +12,8 @@ Resources:
       CodeUri: ./ 
       Handler: app.handler
       Runtime: nodejs10.x
+      Policies: 
+      - AdministratorAccess
       Events:
         Api:
           Type: Api
