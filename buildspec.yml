@@ -25,7 +25,7 @@ phases:
       - npm install -g sonarqube-scanner
       - sonar-scanner -Dsonar.host.url=http://3.230.66.65 -Dsonar.login=be1c0e01a2a9dd7107a82f805fb8ddc7fe38ff8e -Dsonar.login=sonarqube -Dsonar.password=Idxsq@123
       - sam package --template-file $samTemplate --s3-bucket $s3ArtifactBucketName --output-template-file $packagedTemplate
-      - sam deploy --template-file outputtemplate.yaml --stack-name los-sam-lambda --region us-east-1 --capabilities CAPABILITY_NAMED_IAM
+      - sam deploy --template-file outputtemplate.yaml --stack-name los-sam-lambda --region us-east-1 --capabilities CAPABILITY_IAM
       - echo Build completed on `date`
 artifacts:
   type: zip
