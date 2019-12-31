@@ -5,7 +5,6 @@ Description: SAM Application template
 Globals:
   Function:
     Timeout: 3
-
 Resources:
   AppFunction:
     Type: AWS::Serverless::Function
