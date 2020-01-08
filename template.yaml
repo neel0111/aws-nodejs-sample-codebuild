@@ -9,8 +9,7 @@ Resources:
   AppFunction:
     Type: AWS::Serverless::Function
     Properties:
-      CodeUri: ./
-      Handler: index.samplehandler
+      Handler: index.handler
       Runtime: nodejs10.x
       Policies: 
        - CloudFormationDescribeStacksPolicy: {}
