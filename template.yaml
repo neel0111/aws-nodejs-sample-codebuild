@@ -9,7 +9,7 @@ Resources:
   AppFunction:
     Type: AWS::Serverless::Function
     Properties:
-      CodeUri: Sam-example
+      CodeUri: Sam-example/
       Handler: index.handler
       Runtime: nodejs10.x
       Policies: 
