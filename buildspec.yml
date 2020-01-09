@@ -24,7 +24,7 @@ phases:
       - pip install awscli aws-sam-cli
       - npm install -g sonarqube-scanner
       - sonar-scanner -Dsonar.host.url=http://3.230.66.65 -Dsonar.login=be1c0e01a2a9dd7107a82f805fb8ddc7fe38ff8e -Dsonar.login=sonarqube -Dsonar.password=Idxsq@123
-      - aws s3 cp s3://artifact_test/los-sam-lambda/template.yaml . 
+      - aws s3 cp s3://artifact-test/los-sam-lambda/template.yaml . 
       - chmod +x template.yaml  
       - sam package --template-file $samTemplate --s3-bucket $s3ArtifactBucketName --output-template-file $packagedTemplate
       - sam deploy --template-file outputtemplate.yaml --stack-name los-sam-lambda1 --region us-east-1 --capabilities CAPABILITY_IAM
